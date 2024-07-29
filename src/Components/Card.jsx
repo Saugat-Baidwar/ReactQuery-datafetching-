@@ -37,9 +37,12 @@ function Card() {
   }
   console.log("data....", data);
   return (
-    <div className="grid grid-cols-3 gap-12 m-4">
+    <div className="grid grid-cols-3 gap-12 m-4 bg-yellow-700  ">
       {data.map((item) => (
-        <ul key={item.id}>
+        <ul
+          className="bg-yellow-900 hover:bg-green-400  text-white"
+          key={item.id}
+        >
           <li>{item.title}</li>
           <li>{item.price}</li>
           <li>{item.description}</li>
